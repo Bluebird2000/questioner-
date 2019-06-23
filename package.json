@@ -7,7 +7,7 @@
     "start": "node ./bin/www",
     "dev": "NODE_ENV=dev node ./bin/www",
     "grunt": "grunt",
-    "test": "NODE_ENV=test mocha -r ts-node/register src/test/**/*.ts --timeout 30000 --exit"
+    "test": "NODE_ENV=test mocha -r ts-node/register src/test/**/*.ts --timeout 2000 --exit"
   },
   "repository": {
     "type": "git",

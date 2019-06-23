@@ -1,0 +1,17 @@
+version: "2.1"
+services:
+  questionerapi:
+    image: crowd source questioner
+    restart: always
+    ports:
+      - 8089:7000
+    container_name: questioner_api
+    networks:
+      - not_specified
+    volumes:
+      - /uploads:/uploads
+      - /downloads:/downloads
+    mem_limit: 500m
+networks:
+    not_specified:
+      external: true
